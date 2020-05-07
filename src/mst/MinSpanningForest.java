@@ -183,7 +183,7 @@ class DSU {
     public int find(int vertex) {
         // Time complexity is O(logN)
         // But in fact it's close to O(1) for all reasonable numbers
-        // Emaxx states that it won't extend 4 for N <= 10^600
+        // Emaxx states that it won't exceed 4 for N <= 10^600
         // https://e-maxx.ru/algo/dsu
 
         if (vertex == parents[vertex])
